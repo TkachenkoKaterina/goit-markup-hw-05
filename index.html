@@ -59,6 +59,7 @@
 					</ul>
 				</div>
 			</div>
+			<div class="only-border"></div>
 		</header>
 
 		<!-- Раздел Мейн -->
@@ -66,8 +67,19 @@
 			<!-- Секция герой -->
 			<section class="section-hero hero-bg">
 				<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-				<button class="btn" type="button">Заказать услугу</button>
+				<button class="btn" type="button" data-modal-open>Заказать услугу</button>
 			</section>
+
+			<!-- Модальное окно -->
+			<div class="backdrop is-hidden" data-modal>
+				<div class="modal">
+					<button class="modal-close-btn" type="button" data-modal-close>
+						<svg width="11" height="11">
+							<use href="./images/close-btn-optim.svg#icon-close-btn"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
 
 			<!-- Секция Особенности -->
 			<section class="section">
@@ -129,12 +141,21 @@
 					<ul class="work-list">
 						<li class="list">
 							<img src="./images/main/img1-sq.jpg" alt="Десктопные решения" width="370" height="294" />
+							<div class="box-text">
+								<p class="work-text">Десктопные приложения</p>
+							</div>
 						</li>
 						<li class="list">
 							<img src="./images/main/img2-sq.jpg" alt="Мобильные приложения" width="370" height="294" />
+							<div class="box-text">
+								<p class="work-text">Мобильные приложения</p>
+							</div>
 						</li>
 						<li class="list">
 							<img src="./images/main/img3-sq.jpg" alt="Приложения для планшетов" width="370" height="294" />
+							<div class="box-text">
+								<p class="work-text">Дизайнерские решения</p>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -400,5 +421,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
