@@ -694,7 +694,7 @@
     </footer>
 
     <!-- Backdrop with Modal window -->
-    <div class="modal-overlay" data-modal>
+    <div class="modal-overlay is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8" aria-label="close icon">
@@ -771,15 +771,15 @@
           <!-- checkbox -->
           <div class="form-modal-wrapper-checkbox">
             <input
-              class="form-checkbox-input"
+              class="form-checkbox-input visually-hidden"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
               value="true"
               required
             />
-            <label class="form-checkbox" for="user-privacy"
-              >I accept the terms and conditions of the
+            <label class="form-checkbox" for="user-privacy">
+              I accept the terms and conditions of the
               <span class="form-policy">
                 <svg class="form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
@@ -787,7 +787,14 @@
               </span>
               <a class="form-policy-link" href="">Privacy Policy</a>
             </label>
-          </div>
+
+            <!-- <span class="form-policy">
+              <svg class="form-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <a class="form-policy-link" href="">Privacy Policy</a>
+          </div> -->
 
           <!-- <label class="form-checkbox">
             <input
