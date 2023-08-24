@@ -677,7 +677,7 @@
               <input
                 type="email"
                 class="footer-form-input"
-                name="footer_email"
+                name="footer-email"
                 title="Введіть вашу ел-адресу через @"
                 placeholder="E-mail"
               />
@@ -694,26 +694,24 @@
     </footer>
 
     <!-- Backdrop with Modal window -->
-    <div class="modal-overlay is-hidden" data-modal>
+    <div class="modal-overlay" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8" aria-label="close icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-
+        <p class="form-title">Leave your contacts and we will call you back</p>
         <form class="form-modal">
-          <p class="form-title">
-            Leave your contacts and we will call you back
-          </p>
           <!-- user-name -->
-          <label class="form-desc">
-            <span class="form-desc-title">Name</span>
-            <span class="form-input-wrapper">
+          <div class="form-modal-wrapper">
+            <label for="user-name" class="form-desc-title">Name</label>
+            <div class="form-input-wrapper">
               <input
                 class="form-input"
                 type="text"
-                name="user_name"
+                name="user-name"
+                id="user-name"
                 pattern="[a-zA-Zа-яА-яіІїЇєЄґҐ']+"
                 title="Використовуйте тільки літери алфавіту без використання цифр"
                 required
@@ -721,16 +719,17 @@
               <svg class="form-input-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
-            </span>
-          </label>
+            </div>
+          </div>
           <!-- user-tel -->
-          <label class="form-desc">
-            <span class="form-desc-title">Phone</span>
-            <span class="form-input-wrapper">
+          <div class="form-modal-wrapper">
+            <label for="user-phone" class="form-desc-title">Phone</label>
+            <div class="form-input-wrapper">
               <input
                 class="form-input"
                 type="tel"
-                name="user_tel"
+                name="user-phone"
+                id="user-phone"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="Введіть номер телефону в такому форматі xxx-xxx-xx-xx"
                 required
@@ -738,39 +737,63 @@
               <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
-            </span>
-          </label>
+            </div>
+          </div>
           <!-- user-email -->
-          <label class="form-desc">
-            <span class="form-desc-title">Email</span>
-            <span class="form-input-wrapper">
+          <div class="form-modal-wrapper">
+            <label for="user-email" class="form-desc-title">Email</label>
+            <div class="form-input-wrapper">
               <input
                 class="form-input"
                 type="email"
-                name="user_email"
+                name="user-email"
+                id="user-email"
                 title="Введіть вашу ел-адресу через @"
                 required
               />
               <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-            </span>
-          </label>
+            </div>
+          </div>
           <!-- user-message -->
-          <label class="form-desc">
-            <span class="form-desc-title">Comment</span>
-            <textarea
-              class="form-input-message"
-              name="user_message"
-              placeholder="Text input"
-            ></textarea>
-          </label>
+          <div class="form-modal-wrapper-message">
+            <label for="user-comment" class="form-desc-title">Comment</label>
+            <div class="form-input-wrapper">
+              <textarea
+                class="form-input-message"
+                id="user-comment"
+                name="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
           <!-- checkbox -->
-          <label class="form-checkbox">
+          <div class="form-modal-wrapper-checkbox">
             <input
               class="form-checkbox-input"
               type="checkbox"
-              name="form_privacy_policy"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              required
+            />
+            <label class="form-checkbox" for="user-privacy"
+              >I accept the terms and conditions of the
+              <span class="form-policy">
+                <svg class="form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              <a class="form-policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <!-- <label class="form-checkbox">
+            <input
+              class="form-checkbox-input visually-hidden"
+              type="checkbox"
+              name="form-privacy-policy"
               value="form_privacy_policy_accept"
               required
             />
@@ -778,10 +801,10 @@
               <use href="./images/icons.svg#icon-checkbox"></use>
             </svg>
             <span class="form-checkbox-title">
-              I accept the terms and conditions of the<!-- &nbsp; -->
+              I accept the terms and conditions of the
               <a class="form-policy-link" href="">Privacy Policy</a>
             </span>
-          </label>
+          </label> -->
 
           <button class="form-send-btn" type="submit">Send</button>
         </form>
