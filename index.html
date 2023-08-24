@@ -716,7 +716,7 @@
                 title="Використовуйте тільки літери алфавіту без використання цифр"
                 required
               />
-              <svg class="form-input-icon" width="18" height="18">
+              <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
             </div>
@@ -756,17 +756,15 @@
               </svg>
             </div>
           </div>
-          <!-- user-message -->
+          <!-- user-comment -->
           <div class="form-modal-wrapper-message">
             <label for="user-comment" class="form-desc-title">Comment</label>
-            <div class="form-input-wrapper">
-              <textarea
-                class="form-input-message"
-                id="user-comment"
-                name="user-comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+            <textarea
+              class="form-input-message"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <!-- checkbox -->
           <div class="form-modal-wrapper-checkbox">
@@ -779,16 +777,26 @@
               required
             />
             <label class="form-checkbox" for="user-privacy">
-              I accept the terms and conditions of the
               <span class="form-policy">
                 <svg class="form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
+              I accept the terms and conditions of the
               <a class="form-policy-link" href="">Privacy Policy</a>
             </label>
+          </div>
+          <!-- button -->
+          <button class="form-send-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
 
-            <!-- <span class="form-policy">
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
+
+<!-- <span class="form-policy">
               <svg class="form-checkbox-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
@@ -796,7 +804,7 @@
             <a class="form-policy-link" href="">Privacy Policy</a>
           </div> -->
 
-          <!-- <label class="form-checkbox">
+<!-- <label class="form-checkbox">
             <input
               class="form-checkbox-input visually-hidden"
               type="checkbox"
@@ -812,12 +820,3 @@
               <a class="form-policy-link" href="">Privacy Policy</a>
             </span>
           </label> -->
-
-          <button class="form-send-btn" type="submit">Send</button>
-        </form>
-      </div>
-    </div>
-
-    <script src="./js/modal.js"></script>
-  </body>
-</html>

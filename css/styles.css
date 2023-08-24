@@ -896,9 +896,6 @@ button {
   padding: 2px;
   cursor: pointer;
   fill: transparent;
-
-  /* stroke-width: 1px;
-stroke: var(--navyblue-modal, rgba(46, 47, 66, 0.40)); */
 }
 
 .form-checkbox-input:checked ~ .form-checkbox-icon {
