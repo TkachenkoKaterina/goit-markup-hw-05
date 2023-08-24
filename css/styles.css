@@ -888,9 +888,9 @@ button {
   border: none;
 }
 
-.form-checkbox-input:focus ~ .form-checkbox-desc .form-checkbox-policy {
+/* .form-checkbox-input:focus ~ .form-checkbox-desc .form-checkbox-policy {
   border: 1px solid var(--ocean);
-}
+} */
 
 .form-send-btn {
   display: block;
